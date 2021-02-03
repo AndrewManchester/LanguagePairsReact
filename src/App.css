@@ -1,0 +1,44 @@
+:root {
+  --card-unselected: dodgerblue;
+  --card-selected:  green;
+  --card-completed: grey;
+  --card-wrong: red;	
+}
+	
+	   
+body {
+  background-color: lightblue;
+}
+
+.cards { grid-template-columns: repeat(4, 1fr); }
+ 
+.card {
+  background-color: var(--card-unselected);
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
+  height: 2rem;
+}
+
+
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.blue{ 
+  color : blue;
+}
+
+.selected {
+  background-color: var(--card-selected);
+}
+
+.completed { 
+   background-color: var(--card-completed);
+}
+.wrong {
+  background: red;
+}
